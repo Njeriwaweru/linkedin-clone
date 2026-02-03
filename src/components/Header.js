@@ -1,4 +1,3 @@
-import React from 'react'
 import SearchIcon from '@mui/icons-material/Search';
 import '../styles/Header.css'
 import HeaderOption from './HeaderOption';
@@ -7,7 +6,7 @@ import SupervisorAccountIcon from '@mui/icons-material/SupervisorAccount';
 import BusinessCenter from '@mui/icons-material/BusinessCenter';
 import Chat from '@mui/icons-material/Chat';
 import Notifications from '@mui/icons-material/Notifications';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { logout } from '../features/userSlice';
 import { signOut } from 'firebase/auth';
 import { auth } from '../firebase';

@@ -32,7 +32,7 @@ function App() {
       }
     })
 
-    return unsubscribe;
+    return () => unsubscribe();
   }, [dispatch])
 
   return (

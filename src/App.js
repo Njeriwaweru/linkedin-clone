@@ -24,13 +24,16 @@ function App() {
             uid: userAuth.uid,
             displayName: userAuth.displayName,
             photoUrl: userAuth.photoURL,
-        }))
+        })
+      );
       } else {
         // user is logged out
         dispatch(logout())
       }
     })
-  }, [])
+
+    return unsubscribe;
+  }, [dispatch])
 
   return (
     <div className="app">
